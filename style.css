@@ -1,0 +1,538 @@
+/*Website wide formatting*/
+
+/*Background for alternative colors with footer and topbar*/
+    /*Changes the footer and header to have the linear gradient to 
+    smoothly transition from navy to grey back to navy in the footer*/
+    .alternateFooter {
+        background-image: linear-gradient(#d3d3d3, #002A46, #002A46);
+        color:#000000;
+        padding-top: 5px;
+        margin-bottom: 64px;
+    }
+    .alternateTopbar {
+        background-image: linear-gradient(#002A46, #d3d3d3, #d3d3d3, #d3d3d3);
+        margin: 0%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    /*Grey background that allows the grey to extend to the footer and header*/
+    .greyBackground {
+        background-color: #d3d3d3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /*Blue background that allows the blue to extend to the footer and header*/
+    .blueBackground {
+        background-color: #002A46;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color:#ffffff
+    }
+
+/*Column Formatting*/
+    /*Used to display 3 items in a row taking up 30% of the screen width*/
+    .column3-30 {
+        float: left;
+        width: 30%;
+        padding: 16px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1125px) {
+        .column3-30 {
+            width: 80%;
+            padding: 16px, 10%;
+        }
+    }
+
+    /*Used to display 4 items in a row taking up ~22% of the screen width with text centered*/
+    .column4-22c {
+        float: left;
+        width: 22.5%;
+        padding: 16px;
+        text-align: center;   
+    }
+    /*Used to display 4 items in a row taking up ~22% of the screen width with text on the left*/
+    .column4-22l {
+        float: left;
+        width: 22.5%;
+        padding: 16px;
+        text-align: left;   
+        }
+    /*Used to display 2 items in a row taking up ~47% of the screen width*/
+    .column2-47 {
+        float: left;
+        width: 47.5%;
+        padding: 16px;
+        text-align: center;
+    }
+    /*Used to display 2 items in a row with this item taking up 75% of the scren width*/
+    .column2-75 {
+        float: left;
+        width: 75%;
+        padding: 16px;
+        text-align: left;
+    }
+    /*Used with column2-75 to display the second item only taking up 25% of the screen width*/
+    .column2-20 {
+        float: left;
+        width: 20%;
+        padding: 16px;
+        text-align: right;
+    }
+    /*Used to display 2 items in a row with this item taking up 64% of the scren width*/
+    .column2-64 {
+        float: left;
+        width: 64%;
+        padding-top: 16px;
+        padding-left: 8px;
+        padding-bottom: 16px;
+        padding-right: 32px;
+        text-align: left;
+    }
+    /*Used with column2-64 to display the second item only taking up 29% of the screen width*/
+    .column2-29 {
+        float: left;
+        width: 29%;
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-bottom: 16px;
+        padding-right: 8px;
+        text-align: left;
+    }
+
+/*Row Formatting*/
+    /*Used to display the items in each row*/
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/*Lines*/
+    /*Solid Red Line with 3px width*/
+    .red3Line {
+        border: 3px solid #cf1e45;
+    }
+    /*Solid Blue Line with 3px width*/
+    .blue3Line {
+        border: 3px solid #002A46;
+    }
+    /*Solid White Line with 3px width*/
+    .white3Line {
+        border: 3px solid #ffffff;
+    }
+
+/*Basic Text Adjustments*/
+    /*Left Align*/
+    .left {
+        text-align: left;
+    }
+    /*Center Align*/
+    .center {
+        text-align: center;
+    }
+    /*Changes the text color to red*/
+    .red {
+        color:#cf1e45;
+    }
+
+/*Buttons*/
+    /*Grey Button*/
+    .buttonGrey {
+        display: inline-block;
+        background-color: #d3d3d3;
+        border: 2px solid #cf1e45;
+        border-radius: 12px;
+        color: #cf1e45;
+        padding: 24px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    /*Grey Button when hovered over*/
+    .buttonGrey:hover {
+        background-color: #cf1e45;
+        color: #ffffff;   
+    }
+    /*Blue Button*/
+    .buttonBlue {
+        background-color: #002A46;
+        border: 2px solid #cf1e45;
+        border-radius: 12px;
+        color: #cf1e45;
+        padding: 24px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    
+    }
+    /*Blue Button when hovered over*/
+    .buttonBlue:hover {
+        background-color: #cf1e45;
+        color: #ffffff;
+    }
+
+
+/*Main border color and font-family*/
+    html {
+        font-family: Poppins, "New Caledonia", serif;
+        background-color: #002A46;
+    }
+    body {
+        background-color: #ffffff;
+    }
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Merriweather, "FF Tisa", serif;
+    }
+
+/* Navigation bar with color and hovering ability */
+    .topbar {
+        background-image: linear-gradient(#ffffff, #002A46);
+        margin: 0%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .topbar-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #002A46;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0%;
+        width: 43%;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: #cf1e45;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #002A46;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        float: none;
+        color: #ffffff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-content a:hover {
+        background-color: #cf1e45;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+/*Footer with background color, buttons, map and small amount of text*/
+    .footerButtonsLayout {
+        display: block;
+        text-align: center;
+        padding-top: 24px;;
+    }
+    .footer {
+        background-color: #002A46;
+        color: #ffffff;
+        margin-bottom: 64px;
+        padding-top: 5px;
+    }
+    .footerh2 {
+        color: #cf1e45;
+    }
+    .footerItems {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 16px;
+    }
+
+/*Index Page Formating for each section*/
+    .index {
+        background-color: #002A46;
+    }
+    /*Background picture of the man ang dog and text*/
+    .index1Background {
+        background: url('images/index/manAndDog.jpg') no-repeat center;
+        background-size: cover;
+        height: 650px;
+    }
+    .index1Text {
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 10%;
+    }
+    /*Left and Right 15px Padding used throughout the index page*/
+    .indexGreyPadding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*Background picture of a dog and cat with a quote on top*/
+    .index3Background {
+        padding-top: 5px;
+        background: url('images/index/dogAndCat.jpg') no-repeat center;
+        background-size: cover;
+        opacity: 70%;
+        height: 650px;
+    }
+    .index3Text {
+        text-align: left;
+        padding-top: 20px;
+        padding-left: 5%;
+        font-weight: bold;
+        color: #000000;
+    }
+
+/*Form Styling*/
+    /*Sets the basic form details*/
+    .form {
+        margin-left: 12%;
+        margin-right: 12%;
+        padding: 16px;
+        border: 8px solid #002A46;
+        border-radius: 12px;
+    }
+    /*Text Input*/
+        /*Sets the styling for all text inputs not in focus*/
+        input[type=text] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #cf1e45;
+            border-radius: 4px;
+            background-color: #d3d3d3;
+        }
+        /*Changes the border when the text input box is focused on*/
+        input[type=text]:focus {
+            border: 4px solid #002A46;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    /*Email Input*/
+        /*Sets the styling for all email inputs not in focus*/
+        input[type=email] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #cf1e45;
+            border-radius: 4px;
+            background-color: #d3d3d3;
+        }
+        /*Changes the border when the email input box is focused on*/
+        input[type=email]:focus {
+            border: 4px solid #002A46;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    /*Tel Input*/
+        /*Sets the styling for all tel inputs not in focus*/
+        input[type=tel] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #cf1e45;
+            border-radius: 4px;
+            background-color: #d3d3d3;
+        }
+        /*Changes the border when the tel input box is focused on*/
+        input[type=tel]:focus {
+            border: 4px solid #002A46;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    /*Textarea Input*/
+        /*Sets the styling for all textarea inputs not in focus*/
+        textarea {
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #cf1e45;
+            border-radius: 4px;
+            background-color: #d3d3d3;
+        }
+        /*Changes the border when the textarea box is focused on*/
+        textarea:focus {
+            border: 4px solid #002A46;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    /*Date Input*/
+        /*Sets the styling for all date input not in focus*/
+        input[type=date] {
+            width: 40%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #cf1e45;
+            border-radius: 4px;
+            background-color: #d3d3d3;
+        }
+        /*Changes the border when the date input is focused on*/
+        input[type=date]:focus {
+            border: 4px solid #002A46;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    /*Checkbox Input*/
+        .checkbox {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        /*Does not display the html check box*/
+        .checkboxInput {
+            display: none;
+        }
+        /*Sets the styling of the check box*/
+        .checkboxBox {
+            width: 1.25em;
+            height: 1.25em;
+            border: 2px solid #cf1e45;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        /*Sets the styling of the check box when checked*/
+        .checkboxBox::after {
+            content: "\2714";
+            color:#d3d3d3;
+            transform: scale(0);
+            transition: transfrom 0.2s;
+        }
+        /*Sets the background when the checkbox is checked*/
+        .checkboxInput:checked + .checkboxBox{
+            background: #002A46;
+            border-color: #002A46;
+        }
+        .checkboxInput:checked + .checkboxBox::after{
+            transform: scale(1);
+        }
+    /*Radio Input*/
+        .radio {
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        /*Does not display the html radio button*/
+        .radioInput {
+            display: none;
+        }
+        /*Sets the styling of the radio button*/
+        .radioDot {
+            width: 1.25em;
+            height: 1.25em;
+            border: 2px solid #cf1e45;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-sizing: border-box;
+            padding: 2px;
+        }
+        /*Sets the styling of the radio button when checked*/
+        .radioDot::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: #002A46;
+            border-radius: 50%;
+
+            transform: scale(0);
+            transition: 0.2s;
+        }
+        .radioInput:checked + .radioDot::after {
+            transform: scale(1);
+        }
+
+/*FAQ Page Formatting*/
+    /*Styles what is displayed when not clicked*/
+    .accordion {
+        background-color: #002A46;
+        color: #ffffff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 18px;
+        transition: 0.4s;
+    }
+    /*Sets the background when hovering over or selecting an accordion element*/
+    .active, .accordion:hover {
+       background-color: #cf1e45;
+    }
+    /*Sets the icon on the closed accordion*/
+    .accordion:after {
+        content: "\002B";
+        color: #ffffff;
+        float: left;
+        margin-left: 5px;
+        margin-right: 10px;
+        align-items: center;
+    }
+    /*Sets the icon on the open accordion*/
+    .active:after {
+        content: "\2212";
+        color:#ffffff
+    }
+    /*Styles the description portion in the accordion*/
+    .panel {
+        padding: 0 18px;
+        background-color: #d3d3d3;
+        max-height: 0;
+        overflow: hidden;
+        transition: maxheight 0.2s ease-out;
+    }
